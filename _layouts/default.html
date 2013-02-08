@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
@@ -23,26 +17,33 @@
           <li class="fork"><a href="https://github.com/SymmetricInfinity">View On GitHub</a></li>
         </nav>
       </div>
-    <div class="wrapper">
-      <section>
-        <div id="title">
-          <h1>Symmetric Infinity</h1>
-          <p></p>
-          <hr>
+      <div class="wrapper">
+        <section>
+          <div id="title">
+            <h1>Symmetric Infinity</h1>
+            <p></p>
+            <hr>
+          </div>
+        </section>
+        <div id="main_content_wrap">
+          {{ content }}
         </div>
-      </section>
-      <div id="main_content_wrap">
-        {{ content }}
+        <div id="footer">
+          <footer>
+            <hr>
+            <div>
+              <span class="credits left">Maintained by
+                <a href="https://github.com/adamvduke">@adamvduke</a>
+                and
+                <a href="https://github.com/snatchev">@snatchev</a>
+              </span>
+            </div>
+            <div>
+              <span class="credits left">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+            </div>
+          </footer>
+        </div>
       </div>
-      <div id="footer">
-        <footer>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/SymmetricInfinity">SymmetricInfinity</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
-        </footer>
-      </div>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     </div>
   </body>
 </html>

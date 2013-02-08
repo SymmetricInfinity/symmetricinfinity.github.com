@@ -1,0 +1,6 @@
+---
+layout: default
+title: Symmetric Infinity
+---
+
+We should probably put some stuff here.

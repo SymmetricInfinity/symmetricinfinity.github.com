@@ -1,0 +1,25 @@
+.left_col, .right_col {
+  width: 320px;
+}
+.left_col {
+  float: left;
+  margin-right: 5px;
+}
+.right_col {
+  float: right;
+}
+
+.bio {
+  height: 12em;
+}
+
+#footer {
+  clear:both;
+}
+
+.gravatar_img {
+  border:1px solid #;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}

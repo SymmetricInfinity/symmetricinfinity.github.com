@@ -7,7 +7,7 @@ title: Symmetric Infinity ⌯∞
 
 <div class="left_col">
   <img class="gravatar_img" src="http://gravatar.com/avatar/a9d33e3cebb18efd0152162a96b9c415?s=250"/>
-  <div class="bio">Adam’s professional roots are in the enterprise world, working for such companies as Oracle, and Infor Global Solutions. Recently he has made a push into the startup and mobile worlds because of his passion for delivering value straight to end users. He is an expert at rapidly learning new technology and integrating disparate systems.</div>
+  <p class="bio">Adam’s professional roots are in the enterprise world, working for such companies as Oracle, and Infor Global Solutions. Recently he has made a push into the startup and mobile worlds because of his passion for delivering value straight to end users. He is an expert at rapidly learning new technology and integrating disparate systems.</p>
   <div class="expertise">
     <p>
     <h3 class="expertise_title">Expertise</h3>
@@ -37,7 +37,7 @@ title: Symmetric Infinity ⌯∞
 
 <div class="right_col">
   <img class="gravatar_img" src="http://gravatar.com/avatar/3677202b953eebb814ab62c5d1ad9f7a?s=250"/>
-  <div class="bio">Stefan has been a software contractor for small businesses and startups for the last 6 years. He works closely with founders and stakeholders to shape an idea into to a finished product and service. His technical strengths are in server-side architecture.</div>
+  <p class="bio">Stefan has been a software contractor for small businesses and startups for the last 6 years. He works closely with founders and stakeholders to shape an idea into to a finished product and service. His technical strengths are in server-side architecture.</p>
   <div class="expertise">
     <p>
     <h3 class="expertise_title">Expertise</h3>

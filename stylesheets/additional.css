@@ -21,3 +21,8 @@
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
+
+nav li {
+  padding-right: 5px;
+}
+

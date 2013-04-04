@@ -1,0 +1,11 @@
+---
+layout: default
+title: An example blog post
+published: false
+---
+
+h1. {{ page.title }}
+
+04 April 2013
+
+Create a new file in /_posts with an appropriate name, add the YAML front matter, and blog away...

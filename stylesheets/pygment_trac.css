@@ -4,11 +4,11 @@
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .g { color: #d0d0d0 } /* Generic */
 .highlight .k { color: #6ab825; font-weight: normal } /* Keyword */
-.highlight .l { color: #d0d0d0 } /* Literal */
-.highlight .n { color: #d0d0d0 } /* Name */
-.highlight .o { color: #d0d0d0 } /* Operator */
-.highlight .x { color: #d0d0d0 } /* Other */
-.highlight .p { color: #d0d0d0 } /* Punctuation */
+.highlight .l { color: #444444 } /* Literal */
+.highlight .n { color: #444444 } /* Name */
+.highlight .o { color: #444444 } /* Operator */
+.highlight .x { color: #444444 } /* Other */
+.highlight .p { color: #444444 } /* Punctuation */
 .highlight .cm { color: #999999; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: #cd2828; font-weight: normal } /* Comment.Preproc */
 .highlight .c1 { color: #999999; font-style: italic } /* Comment.Single */

@@ -3,7 +3,7 @@ layout: default
 title: Symmetric Infinity ⌯∞
 ---
 
-<p>We are technologists that specialize in modern mobile applications and web technologies. We believe in agile development to deliver the most value for the scope or budget of a project.</p>
+<p>We are technologists that specialize in iOS and Rails applications, with experience in most modern web technologies. We believe in agile development to deliver the most value for the scope or budget of a project.</p>
 
 <div class="left_col">
   <img class="gravatar_img" src="http://gravatar.com/avatar/a9d33e3cebb18efd0152162a96b9c415?s=250"/>

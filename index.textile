@@ -12,8 +12,9 @@ title: Symmetric Infinity ⌯∞
     <p>
     <h3 class="expertise_title">Expertise</h3>
     <ul>
+      <li>Push Notifications</li>
       <li>iOS</li>
-      <li>API Integration</li>
+      <li>API Design/Integration</li>
       <li>Ruby/Rails</li>
       <li>Analytics</li>
       <li>TDD/BDD</li>
@@ -42,6 +43,7 @@ title: Symmetric Infinity ⌯∞
     <p>
     <h3 class="expertise_title">Expertise</h3>
     <ul>
+      <li>Push Notifications</li>
       <li>API Design</li>
       <li>Mobile Backed Infrastructure</li>
       <li>Automated Testing and QA</li>

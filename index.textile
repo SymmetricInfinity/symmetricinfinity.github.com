@@ -21,10 +21,11 @@ title: Symmetric Infinity ⌯∞
     </ul>
     <h3>Apps</h3>
     <ul>
-      <li>VineLoop</li>
-      <li>MyPMI</li>
-      <li>Interact</li>
-      <li>TicketFly</li>
+      <li><a href="https://itunes.apple.com/us/app/trustlines/id479224682?mt=8" target="_blank">Trustlines</a></li>
+      <li><a href="https://itunes.apple.com/us/app/mypmi/id562906498?mt=8" target="_blank">MyPMI</a></li>
+      <li><a href="https://itunes.apple.com/us/app/interact-find-meet-new-people/id513386883?mt=8" target="_blank">Interact</a></li>
+      <li><a href="http://phillytechcalendar.com/" target="_blank">PhillyTechCalendar</a></li>
+      <li><a href="https://www.zeropush.com/?beta=true" target="_blank">ZeroPush</a></li>
     </ul>
     <h3>Contact</h3>
     <ul>
@@ -53,10 +54,11 @@ title: Symmetric Infinity ⌯∞
 
     <h3>Apps</h3>
     <ul>
-      <li>SevOne</li>
-      <li>MyPMI</li>
-      <li>Interact</li>
-      <li>Chinoki</li>
+      <li><a href="https://itunes.apple.com/us/app/sevone-mobile/id580585725?mt=8" target="_blank">SevOne</a></li>
+      <li><a href="https://itunes.apple.com/us/app/mypmi/id562906498?mt=8" target="_blank">MyPMI</a></li>
+      <li><a href="https://itunes.apple.com/us/app/interact-find-meet-new-people/id513386883?mt=8" target="_blank">Interact</a></li>
+      <li><a href="https://www.chinoki.com/" target="_blank">Chinoki</a></li>
+      <li><a href="https://www.zeropush.com/?beta=true" target="_blank">ZeroPush</a></li>
     </ul>
     <h3>Contact</h3>
     <ul>

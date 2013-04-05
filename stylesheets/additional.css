@@ -31,3 +31,17 @@ nav li {
 h1 a {
   color: white;
 }
+
+@media print, screen and (max-width: 480px) {
+  .left_col, .right_col {
+    width: 450px;
+    padding-right: 0px;
+  }
+}
+
+@media print, screen and (max-width: 320px) {
+  .left_col, .right_col {
+    width: 290px;
+  }
+}
+

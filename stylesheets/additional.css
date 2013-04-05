@@ -1,9 +1,10 @@
 .left_col, .right_col {
-  width: 315px;
+  width: 430px;
   float: left;
 }
+
 .left_col {
-  margin-right: 20px;
+  padding-right: 60px;
 }
 
 .bio {

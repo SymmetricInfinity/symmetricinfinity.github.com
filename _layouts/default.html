@@ -52,6 +52,12 @@
                   <li class=""><a href="/blog.html">Blog</a></li>
                 {% endif %}
 
+                {% if page.active_id == 'portfolio' %}
+                  <li class="active"><a href="/portfolio.html">Portfolio</a></li>
+                {% else %}
+                  <li class=""><a href="/portfolio.html">Portfolio</a></li>
+                {% endif %}
+
                 {% if page.active_id == 'contact' %}
                   <li class="active"><a href="/contact.html">Contact</a></li>
                 {% else %}

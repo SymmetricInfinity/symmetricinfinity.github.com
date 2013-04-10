@@ -1,0 +1,73 @@
+---
+layout: default
+title: Symmetric Infinity ⌯∞
+---
+
+<p>We are technologists that specialize in iOS and Rails applications, with experience in most modern web technologies. We believe in agile development to deliver the most value for the scope or budget of a project.</p>
+<p>We are always interested in finding new and interesting projects to work on. See our <a href="#contact-us">contact info</a> to hire us.</p>
+<div class="left_col">
+  <img class="gravatar_img" src="http://gravatar.com/avatar/a9d33e3cebb18efd0152162a96b9c415?s=250"/>
+  <p class="bio">Adam's professional roots are in the enterprise world, working for such companies as Oracle, and Infor Global Solutions. Recently he has made a push into the startup and mobile worlds because of his passion for delivering value straight to end users. He is an expert at rapidly learning new technology and integrating disparate systems.</p>
+  <div class="expertise">
+    <p>
+    <h3 class="expertise_title">Expertise</h3>
+    <ul>
+      <li>Push Notifications</li>
+      <li>iOS</li>
+      <li>API Design/Integration</li>
+      <li>Ruby/Rails</li>
+      <li>Analytics</li>
+      <li>TDD/BDD</li>
+    </ul>
+    <h3>Apps</h3>
+    <ul>
+      <li><a href="https://itunes.apple.com/us/app/trustlines/id479224682?mt=8" target="_blank">Trustlines</a></li>
+      <li><a href="https://itunes.apple.com/us/app/mypmi/id562906498?mt=8" target="_blank">MyPMI</a></li>
+      <li><a href="https://itunes.apple.com/us/app/interact-find-meet-new-people/id513386883?mt=8" target="_blank">Interact</a></li>
+      <li><a href="http://phillytechcalendar.com/" target="_blank">PhillyTechCalendar</a></li>
+      <li><a href="https://www.zeropush.com/?beta=true" target="_blank">ZeroPush</a></li>
+    </ul>
+    <h3>Contact</h3>
+    <ul>
+      <li><a href="mailto:adam@symmetricinfinity.com">adam@symmetricinfinity.com</a></li>
+      <li><a href="http://adamvduke.com/">http://adamvduke.com/</a></li>
+      <li><a href="http://www.linkedin.com/in/adamduke/">http://www.linkedin.com/in/adamduke/</a></li>
+      <li><a href="https://github.com/adamvduke">https://github.com/adamvduke</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="right_col">
+  <img class="gravatar_img" src="http://gravatar.com/avatar/3677202b953eebb814ab62c5d1ad9f7a?s=250"/>
+  <p class="bio">Stefan has been a software contractor for small businesses and startups for the last 6 years. He works closely with founders and stakeholders to shape an idea into to a finished product and service. His technical strengths are in server-side architecture.</p>
+  <div class="expertise">
+    <p>
+    <h3 class="expertise_title">Expertise</h3>
+    <ul>
+      <li>Push Notifications</li>
+      <li>API Design</li>
+      <li>Mobile Backed Infrastructure</li>
+      <li>Automated Testing and QA</li>
+      <li>3rd Party Integration</li>
+      <li>Ruby/Rails, iOS, Javascript</li>
+    </ul>
+
+    <h3>Apps</h3>
+    <ul>
+      <li><a href="https://itunes.apple.com/us/app/sevone-mobile/id580585725?mt=8" target="_blank">SevOne</a></li>
+      <li><a href="https://itunes.apple.com/us/app/mypmi/id562906498?mt=8" target="_blank">MyPMI</a></li>
+      <li><a href="https://itunes.apple.com/us/app/interact-find-meet-new-people/id513386883?mt=8" target="_blank">Interact</a></li>
+      <li><a href="https://www.chinoki.com/" target="_blank">Chinoki</a></li>
+      <li><a href="https://www.zeropush.com/?beta=true" target="_blank">ZeroPush</a></li>
+    </ul>
+    <h3>Contact</h3>
+    <ul>
+      <li><a href="mailto:stefan@symmetricinfinity.com">stefan@symmetricinfinity.com</a></li>
+      <li><a href="http://snatchev.com">http://snatchev.com</a></li>
+      <li><a href="http://linkedin.com/in/snatchev">http://linkedin.com/in/snatchev</a></li>
+      <li><a href="https://github.com/snatchev">https://github.com/snatchev</a></li>
+    </ul>
+    <div id="contact-us"></div>
+  </div>
+</div>
+

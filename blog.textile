@@ -3,11 +3,26 @@ layout: default
 title: Symmetric Infinity Blog ⌯∞
 ---
 
-<div id="latest_posts">
-  <h2>Latest Posts</h2>
-  <ul>
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<section class="section alt" id="promo">
+  <div class="container">
+    <div class="hero-unit">
+      <h1>Our News</h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row-fluid">
+      <div id="latest_posts">
+        <h2>Latest Posts</h2>
+        <ul>
+          {% for post in site.posts %}
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+

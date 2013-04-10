@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: post
 title: Facebook Real-time Updates in Rails on Heroku
 ---
 
-h2. {{ page.title }}
-
-Adam Duke | 03 April 2012
+h3. Adam Duke | 03 April 2012
 
 One of our recent client apps depends heavily on accurate and up to date data from the Facebook Graph API. The first solution that we implemented relied on polling the API on a scheduled basis, but that proved not to be very scalable as the number of users in the system increased.
 

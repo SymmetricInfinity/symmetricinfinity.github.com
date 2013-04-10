@@ -78,6 +78,9 @@
     <script src="/javascripts/bootstrap.js" type="text/javascript"></script>
     <script src="/javascripts/script.js" type="text/javascript"></script>
     <script src="/javascripts/switcher.js" type="text/javascript"></script>
+    {% if page.active_id == 'contact' %}
+      {% include map.html %}
+    {% endif %}
   </body>
 </html>
 

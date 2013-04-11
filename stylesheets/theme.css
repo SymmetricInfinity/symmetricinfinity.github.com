@@ -699,8 +699,11 @@ figure {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-.thumbnail-figure img:hover {
+.thumbnail-figure img:hover, .thumbnail-figure.dimmed img{
   opacity: .4;
+}
+.thumbnail-figure.dimmed img:hover{
+  opacity: 1.0;
 }
 
 .thumbnail-title {

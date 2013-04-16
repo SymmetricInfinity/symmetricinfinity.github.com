@@ -1,0 +1,43 @@
+---
+layout: post
+title: Rails' routing conditions for a DRY routes.rb file
+---
+
+h3. Stefan Natchev | 15 April 2013
+
+Rails' routing gives you the ability to set any number of "scopes":http://guides.rubyonrails.org/routing.html#controller-namespaces-and-routing and "constraints":http://guides.rubyonrails.org/routing.html#request-based-constraints on your routes. These conditions must all match for the route to match. Sometimes, we want to have any one of the conditions to be true in order to match a route.
+
+For example, we want both of these urls to route to the same actions:
+
+* With a path prefix @http://www.example.com/api/register@
+* With a subdomain @http://api.example.com/register@
+
+Unfortunately, the following mapping produces a condition on both having the subdomain _and_ path prefix.
+
+{% highlight ruby %}
+constraints subdomain: "api" do
+  scope "/api" do
+    controller :api do
+      post :register
+    end
+  end
+end
+{% endhighlight %}
+
+That route will only match @http://api.example.com/api/register@. Not quite what we are looking for.
+
+h3. First Implementation
+
+Initially, we would have to duplicate all of our endpoints wrapped in a subdomain contraint and a path scope:
+
+<script src="https://gist.github.com/snatchev/5396775/c516ff81be263253d6f06f5fa659569498a6fde8.js"></script>
+
+This is not a grest solution since any new controller actions would require changes in two places.
+
+h3. A Better Way
+
+A neat trick is to define a method inside the routes block that emits the routes. This can then be wrapped by the scope and constraints conditionals.
+
+<script src="https://gist.github.com/snatchev/5396775/e204d06f2fb32871abfa71166aafcc786c350e1d.js"></script>
+
+This is a great way to group your endpoints into logical chunks that can be reused in different contexts.

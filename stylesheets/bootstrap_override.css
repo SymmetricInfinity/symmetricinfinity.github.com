@@ -1,5 +1,13 @@
 pre {
+  overflow: auto;
+}
+
+pre, pre code {
   white-space:pre;
+}
+
+pre code {
+  display: inline-block;
 }
 
 .hero-unit h1 {

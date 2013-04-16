@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Rails' routing conditions for a DRY routes.rb file
+title: Rails routing conditions for a DRY routes.rb file
 ---
 
 h3. Stefan Natchev | 15 April 2013
 
-Rails' routing gives you the ability to set any number of "scopes":http://guides.rubyonrails.org/routing.html#controller-namespaces-and-routing and "constraints":http://guides.rubyonrails.org/routing.html#request-based-constraints on your routes. These conditions must all match for the route to match. Sometimes, we want to have any one of the conditions to be true in order to match a route.
+Rails routing gives you the ability to set any number of "scopes":http://guides.rubyonrails.org/routing.html#controller-namespaces-and-routing and "constraints":http://guides.rubyonrails.org/routing.html#request-based-constraints on your routes. These conditions must all match for the route to match. Sometimes, we want to have any one of the conditions to be true in order to match a route.
 
 For example, we want both of these urls to route to the same actions:
 
@@ -30,7 +30,26 @@ h3. First Implementation
 
 Initially, we would have to duplicate all of our endpoints wrapped in a subdomain constraint and a path scope:
 
-<script src="https://gist.github.com/snatchev/5396775/c516ff81be263253d6f06f5fa659569498a6fde8.js"></script>
+{% highlight ruby %}
+Rails::Application.routes.draw do
+
+  constraints subdomain: "api" do
+    controller :api do
+      resources :widget
+      post :register
+      get :help
+    end
+  end
+
+  scope "/api" do
+    controller :api do
+      resources :widget
+      post :register
+      get :help
+    end
+  end
+end
+{% endhighlight %}
 
 This is not a great solution since any new controller actions would require changes in two places.
 
@@ -38,6 +57,26 @@ h3. A Better Way
 
 A neat trick is to define a method inside the routes block that emits the routes. This can then be wrapped by the scope and constraints conditional.
 
-<script src="https://gist.github.com/snatchev/5396775/e204d06f2fb32871abfa71166aafcc786c350e1d.js"></script>
+{% highlight ruby %}
+Rails::Application.routes.draw do
+
+  def api_endpoints
+    controller :api do
+      resources :widget
+      post :register
+      get :help
+    end
+  end
+
+  constraints subdomain: "api" do
+    api_endpoints
+  end
+
+  scope "/api" do
+    api_endpoints
+  end
+end
+
+{% endhighlight %}
 
 This is a great way to group your endpoints into logical chunks that can be reused in different contexts.

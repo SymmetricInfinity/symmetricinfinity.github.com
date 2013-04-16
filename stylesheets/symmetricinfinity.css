@@ -25,3 +25,6 @@
 .gist, .highlight pre {
   margin: 0px 1em;
 }
+.highlight {
+  margin-bottom: 1em;
+}

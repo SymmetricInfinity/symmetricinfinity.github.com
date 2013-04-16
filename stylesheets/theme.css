@@ -1627,8 +1627,12 @@ figure {
 }
 
 @media (max-width: 360px) {
-  .hero-unit h1 {
+  .hero-unit h1, .hero-unit h1 div {
     font-size: 40px;
+  }
+  .hero-unit h1 .center {
+    font-size: 0.8em;
+    line-height: 1.25em;
   }
 
   #masthead .brand {
@@ -1717,4 +1721,21 @@ figure {
   .theme-pattern-subtle-stripes .section.alt, .theme-pattern-subtle-stripes.alt {
     background-image: url(../images/patterns/subtle_stripes_@2X.png);
   }
+}
+
+.quote { }
+.quote hr { width: 25%; float: left; }
+.quote .top {
+  font-size: 0.8em;
+}
+.quote .center {
+  font-size: 0.8em;
+  float: left;
+  font-size: 48px;
+  text-transform: none;
+  font-style: italic;
+  width: 50%;
+}
+.quote .bottom {
+  clear: left;
 }

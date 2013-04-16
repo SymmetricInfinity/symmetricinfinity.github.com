@@ -28,15 +28,15 @@ That route will only match @http://api.example.com/api/register@. Not quite what
 
 h3. First Implementation
 
-Initially, we would have to duplicate all of our endpoints wrapped in a subdomain contraint and a path scope:
+Initially, we would have to duplicate all of our endpoints wrapped in a subdomain constraint and a path scope:
 
 <script src="https://gist.github.com/snatchev/5396775/c516ff81be263253d6f06f5fa659569498a6fde8.js"></script>
 
-This is not a grest solution since any new controller actions would require changes in two places.
+This is not a great solution since any new controller actions would require changes in two places.
 
 h3. A Better Way
 
-A neat trick is to define a method inside the routes block that emits the routes. This can then be wrapped by the scope and constraints conditionals.
+A neat trick is to define a method inside the routes block that emits the routes. This can then be wrapped by the scope and constraints conditional.
 
 <script src="https://gist.github.com/snatchev/5396775/e204d06f2fb32871abfa71166aafcc786c350e1d.js"></script>
 

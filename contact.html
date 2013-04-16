@@ -18,29 +18,37 @@ active_id: contact
       </h1>
     </div>
     <div class="row-fluid">
-      <div class="span6 span-false">
+      <address class="span6 span-false" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+        <meta itemprop="name" content="Symmetric Infinity LLC"/>
         <p>
-        Our office is conveniently located in center city Philadelphia.
+          Our office is conveniently located in center city Philadelphia.
         </p>
         <ul class="icons">
           <li>
-          <p><i class="icon-home"></i>2016 Walnut Street, Philadelphia, PA 19103
+          <p>
+            <i class="icon-home"></i>
+            <span itemprop="street-address">2016 Walnut Street</span>,
+            <span itemprop="locality">Philadelphia</span>,
+            <span itemprop="postal-code">PA 19103</span>
           </p>
           </li>
           <li>
-          <p><i class="icon-phone"></i>(267) 702-6762
+          <p itemprop="tel">
+            <i class="icon-phone"></i>(267) 702-6762
           </p>
           </li>
           <li>
-          <p><i class="icon-envelope"></i>info@symmetricinfinity.com
+          <p>
+            <i class="icon-envelope"></i>info@symmetricinfinity.com
           </p>
           </li>
           <li>
-          <p><i class="icon-globe"></i>symmetricinfinity.com
+          <p itemprop="url">
+            <i class="icon-globe"></i>symmetricinfinity.com
           </p>
           </li>
         </ul>
-      </div>
+      </address>
     </div>
   </div>
 </section>

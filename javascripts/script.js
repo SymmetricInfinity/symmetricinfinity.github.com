@@ -1,7 +1,7 @@
 // Custom scripts goes here
 (function() {
     // Initialize carousel
-    //carouselInit();
+    carouselInit();
 
     // Portfolio filters function
     portfolioFilters();

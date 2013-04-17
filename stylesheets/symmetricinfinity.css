@@ -3,6 +3,7 @@
 .quote .top {
   font-size: 0.8em;
 }
+
 .quote .center {
   font-size: 0.8em;
   float: left;
@@ -11,6 +12,7 @@
   font-style: italic;
   width: 50%;
 }
+
 .quote .bottom {
   clear: left;
 }
@@ -22,9 +24,6 @@
   margin-bottom: 10px;
 }
 
-.gist, .highlight pre {
-  margin: 0px 1em;
-}
 .highlight {
   margin-bottom: 1em;
 }

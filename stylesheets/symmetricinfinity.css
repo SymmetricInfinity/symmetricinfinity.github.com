@@ -27,3 +27,13 @@
 .highlight {
   margin-bottom: 1em;
 }
+
+.post_title {
+  display: inline-block;
+  width: 100px;
+}
+
+.post_title_sep {
+  display: inline-block;
+  width: 5px;
+}

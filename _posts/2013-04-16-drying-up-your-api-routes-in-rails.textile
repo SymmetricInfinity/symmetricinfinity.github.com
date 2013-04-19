@@ -26,7 +26,7 @@ end
 
 That route will only match @http://api.example.com/api/register@. Not quite what we are looking for.
 
-h3. First Implementation
+h4. First Implementation
 
 Initially, we would have to duplicate all of our endpoints wrapped in a subdomain constraint and a path scope:
 
@@ -53,7 +53,7 @@ end
 
 This is not a great solution since any new controller actions would require changes in two places.
 
-h3. A Better Way
+h4. A Better Way
 
 A neat trick is to define a method inside the routes block that emits the routes. This can then be wrapped by the scope and constraints conditional.
 

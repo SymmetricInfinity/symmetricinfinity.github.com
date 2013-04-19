@@ -5,13 +5,13 @@ title: iOS Push Notifications from Ejabberd
 
 h3. Adam Duke | 23 January 2013
 
-h3. Problem
+h4. Problem
 
 I recently had the fortune to work on an iOS application that included a feature to allow users to chat with each other. The decision was made to use ejabberd as the backend for the chat, with a native, SMS like, interface for the front end.
 
 One of the challenges we had to overcome was sending push notifications to offline users when they received an incoming chat message. At the time, it didn't seem like there was a great solution to get messages to offline users directly from ejabberd, so we started doing a bit of research. The solution we came up with requires a some integration, but only between 60-70 lines of code.
 
-h3. Hypothesis
+h4. Hypothesis
 
 Because we were concurrently developing a rails app to provide the API for the iOS app, we decided the easiest solution would be to forward the offline messages from ejabberd to the rails app and integrate "Urban Airship":http://urbanairship.com/ to handle the communication with Apple's push notification service.
 
@@ -21,7 +21,7 @@ We decided to see if we could get ejabberd to forward the messages for offline u
 ** Everything was regularly deployed to a staging environment and compiling ejabberd modules per environment seemed like a maintenance headache.
 # Format the POST body with the data needed by the rails app
 
-h3. Solution
+h4. Solution
 
 The basic idea behind ejabberd modules is that there are lifecylce events that occur, such as a user coming online, a user going offline, or receiving a message, and a module can subscribe to a particular event. When an interesting event happens the modules that are subscribed to that event get run.
 
@@ -46,4 +46,3 @@ PostUrl = gen_mod:get_module_opt(To#jid.lserver, ?MODULE, post_url, [] )
 Each time a message is sent to an offline user, an http request to the <tt>PostUrl</tt> is made using the <tt>Token</tt>, and the contents of <tt>To</tt>, <tt>From</tt>, and <tt>Body</tt> fields. We implemented a controller action accepts the incoming post and hands it off to Urban Airship. The message makes a bunch of hops between applications, but in reality there is very little code which means fewer bugs, and a lower cost of maintenance.
 
 The full mod_offline_post module along with two others can be found "on my github profile":https://github.com/adamvduke/mod_interact.  
-

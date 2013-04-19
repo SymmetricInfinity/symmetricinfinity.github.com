@@ -14,7 +14,7 @@ I broke my effort into a few parts:
 # Parsing the data
 # Saving the photos
 
-h3. Learning how to work with the API
+h4. Learning how to work with the API
 
 The Instagram API requires a <tt>client_id</tt> parameter in most cases, and an <tt>access_token</tt> parameter in cases where the request is on behalf of a user such as commenting or liking.
 
@@ -36,7 +36,7 @@ ex.
 
 div(bordered_image). !/blog_content/instagram/instagram_access_token_in_fragment.png!
 
-h3. Getting the correct data from Instagram
+h4. Getting the correct data from Instagram
 
 Now we have everything we need to get data back from instagram. Let's create a ruby script so we can keep track of the steps we're running and make them repeatable. Create a file named ig_downloader.rb and we'll build from there.
 
@@ -51,7 +51,7 @@ json = JSON.parse(response)
 pretty_json = JSON.pretty_generate(json)
 {% endhighlight %}
 
-h3. Parsing the data
+h4. Parsing the data
 
 This request above will return a json response. The response will have the <tt>"data"</tt> key, and its value is the array of likes that we are interested in. If we trim one of the likes down to the keys that will be useful for us, we're left with the following:
 
@@ -108,7 +108,7 @@ http://distilleryimage1.s3.amazonaws.com/1a75c70e944511e280cd22000a9f18de_7.jpg
 http://distilleryimage9.s3.amazonaws.com/ba87806a93ce11e2ab0f22000a9f305a_7.jpg
 </code></pre>
 
-h3. Saving the photos
+h4. Saving the photos
 
 Now that we have all the urls, we can download each image and save it to a file. Add the following snippet to your script and try running it.
 

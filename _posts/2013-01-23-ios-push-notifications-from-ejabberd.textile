@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS Push Notifications from Ejabberd
+title: iOS Push Notifications using Jabber and Ejabberd
 ---
 
 h3. Adam Duke | 23 January 2013

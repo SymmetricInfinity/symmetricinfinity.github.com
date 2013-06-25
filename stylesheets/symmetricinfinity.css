@@ -37,3 +37,16 @@
   display: inline-block;
   width: 5px;
 }
+
+h1.normal-case {
+  text-transform: none;
+}
+
+.promo h1 {
+  font-size: 50px;
+}
+.promo p {
+  font-size: 17pt;
+  margin-top: 2em;
+}
+

@@ -1,5 +1,5 @@
 (function() {
-    carouselInit();
+    //carouselInit();
 })();
 
 // Function to animate the height of carousel in case of slides with different heights

@@ -44,8 +44,8 @@ h1.normal-case {
 
 @media (max-width: 760px) {
   #masthead .brand {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 6px;
+    padding-right: 0px;
   }
   .hero-unit.promo {
     padding-top: 0px;

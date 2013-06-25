@@ -42,9 +42,23 @@ h1.normal-case {
   text-transform: none;
 }
 
-.promo h1 {
-  font-size: 50px;
+@media (max-width: 760px) {
+  #masthead .brand {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .hero-unit.promo {
+    padding-top: 0px;
+  }
 }
+
+@media (min-width: 760px) {
+  .promo h1 {
+    font-size: 50px;
+  }
+
+}
+
 .promo p {
   font-size: 17pt;
   margin-top: 2em;

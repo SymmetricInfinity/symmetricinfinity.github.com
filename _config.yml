@@ -1,4 +1,4 @@
 markdown: rdiscount
 pygments: true
 auto:     true
-exclude: Gemfile, Gemfile.lock, README.md
+exclude: Gemfile, Gemfile.lock, README.md, .ruby-version

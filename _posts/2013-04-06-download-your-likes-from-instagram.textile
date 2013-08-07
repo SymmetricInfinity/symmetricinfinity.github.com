@@ -3,6 +3,11 @@ layout: post
 title: Download all the photos you've liked on Instagram
 ---
 
+h4. Update
+
+# I took what I learned from writing this script and wrapped it up in a "web app":http://www.likelist.me that will keep track of your likes for you. Please email me if you have any feedback.
+# In addition to using the 'users/self/media/liked/' endpoint shown below, any paged endpoint from the api can be used in the for the starting 'media_url'.
+
 h3. Adam Duke | 06 April 2013
 
 I recently discovered that Instagram will only ever return the last ~300 likes when trying to view the history of the things you've liked. I'm not sure if I'm the only one, but finding that out bothered me. I use the like feature to bookmark photos that I want to check out later, as well as letting someone know that I like their photo. I decided to build something that would help me keep track of my likes for the long term.

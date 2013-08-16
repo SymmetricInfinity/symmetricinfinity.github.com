@@ -13,7 +13,7 @@ One of the challenges we had to overcome was sending push notifications to offli
 
 h4. Hypothesis
 
-Because we were concurrently developing a rails app to provide the API for the iOS app, we decided the easiest solution would be to forward the offline messages from ejabberd to the rails app and integrate "Urban Airship":http://urbanairship.com/ to handle the communication with Apple's push notification service.
+Because we were concurrently developing a rails app to provide the API for the iOS app, we decided the easiest solution would be to forward the offline messages from ejabberd to the rails app and integrate "ZeroPush":https://zeropush.com/ to handle the communication with Apple's push notification service.
 
 We decided to see if we could get ejabberd to forward the messages for offline users. In my research, I came across a module for ejabberd called "mod_offline_prowl":http://www.unsleeping.com/2010/07/31/prowl-module-for-ejabberd/ that was originally intended to forward offline messages from ejabberd to "Prowl":http://www.prowlapp.com/. After digging into the mod_offline_prowl code, I saw that it could be adapted to do what I needed. There were two things I needed it to do a bit differently.
 
@@ -43,6 +43,6 @@ Token = gen_mod:get_module_opt(To#jid.lserver, ?MODULE, auth_token, [] ),
 PostUrl = gen_mod:get_module_opt(To#jid.lserver, ?MODULE, post_url, [] )
 {% endhighlight%}
 
-Each time a message is sent to an offline user, an http request to the <tt>PostUrl</tt> is made using the <tt>Token</tt>, and the contents of <tt>To</tt>, <tt>From</tt>, and <tt>Body</tt> fields. We implemented a controller action accepts the incoming post and hands it off to Urban Airship. The message makes a bunch of hops between applications, but in reality there is very little code which means fewer bugs, and a lower cost of maintenance.
+Each time a message is sent to an offline user, an http request to the <tt>PostUrl</tt> is made using the <tt>Token</tt>, and the contents of <tt>To</tt>, <tt>From</tt>, and <tt>Body</tt> fields. We implemented a controller action that accepts the incoming post and hands it off to "ZeroPush":https://zeropush.com. The message makes a bunch of hops between applications, but in reality there is very little code which means fewer bugs, and a lower cost of maintenance.
 
 The full mod_offline_post module along with two others can be found "on my github profile":https://github.com/adamvduke/mod_interact.  

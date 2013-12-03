@@ -64,3 +64,8 @@ h1.normal-case {
   margin-top: 2em;
 }
 
+@media (min-width: 768px) and (max-width: 979px) {
+  #footer {
+    font-size: 14px;
+  }
+}

@@ -691,7 +691,6 @@ figure {
 .thumbnail-figure {
   margin: 0 0 24px;
   position: relative;
-  background: #333333;
 }
 .thumbnail-figure img {
   -webkit-transition: all 0.2s;
@@ -699,9 +698,15 @@ figure {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-.thumbnail-figure img:hover, .thumbnail-figure.dimmed img{
-  opacity: .4;
+
+.thumbnail-figure.no-dim img:hover {
+  opacity: 1.0;
 }
+
+.thumbnail-figure img:hover, .thumbnail-figure.dimmed img{
+  opacity: .8;
+}
+
 .thumbnail-figure.dimmed img:hover{
   opacity: 1.0;
 }
@@ -718,10 +723,9 @@ figure {
 .thumbnail-title span {
   display: inline-block;
   background: white;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(211, 211, 211, .8);
   color: black;
   padding: 5px 10px;
-  text-shadow: 1px 1px 1px white;
   margin-top: 1px;
 }
 
